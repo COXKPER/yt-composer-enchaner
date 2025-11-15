@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Comment Image Preview",
+  "version": "1.0",
+  "description": "Adds [image=...] preview in YouTube comment composer using custom domains/aliases.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": []
+}
